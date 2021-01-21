@@ -1,0 +1,597 @@
+html {
+    font-size: 62.5%;
+    /** =10px de 16px**/
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+/**Global**/
+.contenedor {
+    max-width: 140rem;
+    /** = 1100px**/
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3, 8rem;
+}
+
+h2 {
+    font-size: 3, 4rem;
+    color: #647943;
+}
+
+h3 {
+    font-size: 3rem;
+    color: #647943;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+.flex-videos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*utilidades*/
+.seccion {
+    /* espacio entre secciones*/
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+    /*fuente mas ancha o delgada*/
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.centrar_texto {
+    text-align: center;
+    /*centrar texto*/
+}
+
+.izquierda_texto {
+    text-align: left;
+    /*centrar texto*/
+
+}
+
+/* Barra */
+body.inicio .navegacion .activo {
+    border-bottom: 2px solid #71b100;
+
+}
+
+.navegacion-principal {
+    padding: 20px 0;
+    background-color: white;
+    display: block;
+
+}
+
+.barra a>img {
+    margin-top: 50px;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: -20px;
+    left: 0;
+    z-index: 2;
+
+}
+
+.barra {
+    /*display: flex;*/
+    justify-content: space-evenly;
+    /*Espacio entre los elementos*/
+    align-items: center;
+    /*alinea los elementos*/
+    padding-top: 3rem;
+    text-align: center;
+}
+
+/*navegacion*/
+.navegacion {
+    margin-top: 2rem;
+
+}
+
+.navegacion-footer {
+    padding-left: 3rem;
+    margin-top: 2rem;
+
+}
+
+.navegacion-footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding-left: .7rem;
+    font-size: 1.3rem;
+}
+
+.navegacion-footer a:hover {
+    color: #71b100;
+
+}
+
+.navegacion a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 8px 8px;
+    transition: all .5s ease;
+    width: auto;
+    text-align: center;
+    margin: 0px 30px 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+
+
+}
+
+.navegacion a:hover::before {
+    width: 100%;
+
+}
+
+.navegacion a:hover {
+    color: #71b100;
+    border-bottom: 2px solid #71b100
+}
+
+.navegacion a:last-of-type {
+    /* se aplica al ultimo elemento*/
+    margin: 0;
+}
+
+/* carrusel tamaño */
+.carousel-inner img {
+    background-position: center center;
+    /* mostrar la imagen desde el centro */
+    background-size: cover;
+    /* tome toda la imagen guardando las proporciones*/
+    height: 100vh;
+    /*alto*/
+    min-height: 60rem;
+}
+
+.carousel-inner {
+    height: 400px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+/**Iconos Nosotros*/
+/*coloca a tres columnas espaciado y en el centro de la pagina*/
+.parallax::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /* efecto al fondo moviemiento */
+    -webkit-filter: brightness(50%);
+    filter: brightness(105%);
+}
+
+.productos {
+    position: relative;
+    height: auto;
+
+}
+
+.productos::before {
+    background-image: url(../img/paralax.png);
+    content: '';
+}
+
+.productos-titulo {
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+    /* font-weight: bold; */
+    letter-spacing: 0.25em;
+    font-size: 6rem;
+}
+
+/* Slider-productos */
+
+.slider-productos {
+    display: flex;
+}
+
+.slider-productos .items {
+    width: 300px;
+    height: 250px;
+    margin: 50px;
+}
+
+.slider-productos .items img {
+    width: 350px;
+    height: 250px;
+}
+
+.buttom-productos {
+    background-color: #647943;
+    padding: 8px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 15px;
+    margin-left: 60rem;
+    display: inline-block;
+    position: relative;
+    transition: all .3s ease;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+/* Nuevos productos */
+.nuevos-pros {
+    width: 100%;
+    background-color: #FF6161;
+    height: 120px;
+    position: relative;
+
+}
+
+.btn-nproductos {
+    background-color: #647943;
+    padding: 8px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nuevospro-titulo {
+    position: relative;
+    padding: 25px 0;
+    text-align: center;
+    color: black;
+    /* font-weight: bold; */
+    letter-spacing: 0.25em;
+    font-size: 6rem;
+}
+
+.icono {
+
+    text-align: center;
+}
+
+.icono h3 {
+    text-transform: uppercase;
+    /*cambiar a mayusculas*/
+}
+
+.recetarios {
+    justify-content: space-between
+}
+
+.seccion_juegos h2 {
+    font-size: 5rem;
+}
+
+.img_juegos {
+    text-align: center;
+
+}
+
+.img_juegos h3 {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.img_juegos img {
+    width: 50rem;
+    filter: gray;
+    -webkit-filter: grayscale(0);
+    transition: all .5s ease;
+}
+
+/* .imgnuevo{
+    width: 48rem !important;
+} */
+.img_juegos img:hover {
+    -webkit-filter: grayscale(1);
+    transition: all .5s ease;
+    cursor: pointer;
+
+}
+
+.img_juego {
+    background-color: #647943;
+    background-position: center center;
+    /* mostrar la imagen desde el centro */
+    background-size: cover;
+    /* tome toda la imagen guardando las proporciones*/
+    height: 50vh;
+    /*alto*/
+    min-height: 30rem;
+}
+
+.contenido_juega_noca {
+    flex-direction: column;
+    left: 100%;
+    position: unset;
+    float: right;
+    margin-top: 16rem;
+
+}
+
+.contenido_juega_noca h3 {
+    color: white;
+    padding-bottom: 10px;
+    max-width: 60rem;
+    line-height: 1;
+
+
+}
+
+.boletin {
+    background-color: #647943;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boletin .form-inline {
+    margin-left: 43rem;
+}
+
+.barra-footer {
+    justify-content: space-evenly;
+    /*Espacio entre los elementos*/
+    align-items: center;
+    /*alinea los elementos*/
+    padding-top: 3rem;
+    text-align: center;
+    background-color: #8CC377;
+    height: 20rem;
+}
+
+.barra-footer p {
+    margin-top: 3rem;
+}
+
+/** ICONOS REDES SOCIALES**/
+.social-bar {
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /** se alinea a la parte inferior**/
+    z-index: 100;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+    display: flex;
+    transition: all .5%;
+}
+
+.icon-facebook {
+    background: #2e406e;
+
+}
+
+.icon-twitter {
+    background: #339dc5;
+
+}
+
+.icon-youtube {
+    background: #e83028;
+
+}
+
+.icon-instagram {
+    background: #3f60a5;
+
+}
+
+.icon-whatsapp {
+    background: #075e54;
+
+}
+
+.icon:first-child {
+    border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+    border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+    text-decoration: none;
+    color: white;
+
+}
+
+/* nuestra empresa */
+body.nuestra-empresa .navegacion .activo2 {
+    border-bottom: 2px solid #71b100;
+
+}
+
+.slider-for {
+    width: 700px;
+    height: 400px;
+    margin: 30px auto 1px;
+    overflow: hidden;
+}
+
+.slider-for .item img {
+    width: 100%;
+    min-height: 100%;
+}
+
+.slider-nav {
+    width: 500px;
+    height: 100px;
+    margin: auto;
+}
+
+.slider-nav .item img {
+    width: 100%;
+    min-height: 100%;
+
+}
+
+.slider-nav .slick-track {
+    height: 85px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 50;
+    margin-top: -12px;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.sobre-nosotros h3 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: black;
+}
+
+.sobre-nosotros p {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mascota {
+    width: 100%;
+    background-color: #6BAFC2;
+    height: 220px;
+    position: relative;
+
+}
+
+.mascota h2 {
+    position: relative;
+    padding: -10px 0;
+    text-align: center;
+    color: white;
+    /* font-weight: bold; */
+
+    font-size: 3rem;
+}
+
+.mascota-titulo {
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    /* font-weight: bold; */
+    letter-spacing: 0.25em;
+    font-size: 10rem;
+    font-weight: bold;
+}
+
+.img-noca {
+
+    max-width: 90rem;
+    margin: 0 auto;
+    display: inline;
+    margin-left: 25rem;
+
+}
+
+.img-noca img {
+    margin-top: -30px;
+}
+
+.txt-noca {
+    text-align: center;
+    margin-right: 30rem;
+}
+
+/* Nuestros productos */
+body.nuestros-productos .navegacion .activo3 {
+    border-bottom: 2px solid #71b100;
+
+}
+
+.solidos {
+    width: 100%;
+    background-color: #FF6161;
+    height: 220px;
+    position: relative;
+}
+
+.granulados {
+    width: 100%;
+    background-color: #6BAFC2;
+    height: 220px;
+    position: relative;
+
+}
+
+.solidos .granulados p {
+
+    text-align: center;
+    color: white;
+    max-width: 80rem;
+    /** = 1100px**/
+    margin: 0 auto;
+}
+
+.pro-solidos {
+    position: relative;
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    /* font-weight: bold; */
+    letter-spacing: 0.25em;
+    font-size: 6rem;
+
+}
